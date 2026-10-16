@@ -1,61 +1,66 @@
+The final updates, and concluded research and observations can be observed via the following vercel-deployed website : https://photometry.vercel.app/
+
 # ML-Assisted Photometry of Faint Stars
 
-Aditi Jha's synthetic photometry research project. Genuine executed results, classical estimators, Ridge, residual learning and a compact CNN; presented using the official open-source Distill framework.
+This project explores how accurately the brightness of faint stars can be measured from noisy astronomical images, and whether machine learning offers any advantage over conventional photometric methods.
 
-## Start (MacBook Air M4)
+I generated a dataset of 10,000 synthetic stellar images and implemented four approaches to estimate stellar flux: aperture photometry, Gaussian point-spread-function (PSF) fitting, Ridge regression, and a convolutional neural network (CNN).
 
-Use Python 3.12, venv and pip. No Conda, CUDA, server or paid service is required.
+The aim was not necessarily to make machine learning outperform traditional methods, but to compare how these approaches behave under the same observational conditions.
 
-```bash
-python3.12 -m venv .venv
-source .venv/bin/activate
-python -m pip install -r requirements.txt
-python -m research.run
-python -m pytest -q
-python scripts/build_article.py
-python scripts/check_site.py
-python -m http.server 8000 --directory public
-```
+## What I Built
 
-Open http://localhost:8000. The archive already includes built `public/` output and executed results; no retraining is needed to view it. CPU is the tested device. Native M4 installation and runtime were not tested in this Linux environment. MPS is not required or enabled. Package versions are pinned to the executed environment; platform-specific binary availability must be checked when installing on macOS.
+- Generated 10,000 synthetic 32 × 32 pixel stellar images with known flux values, background noise, and simulated observational variations.
+- Implemented aperture photometry to estimate stellar brightness by summing pixel intensities and subtracting the surrounding background.
+- Implemented Gaussian PSF fitting to estimate flux by modelling the distribution of light across a star's image.
+- Trained a Ridge regression model as a classical machine-learning baseline.
+- Built and trained a CNN to estimate stellar flux directly from image cutouts.
+- Evaluated all four methods on the same 2,000 held-out test images.
+- Compared predictions using mean absolute error (MAE), root mean squared error (RMSE), and bias.
 
-## Individual commands
+## Results
 
-Run these in order for a fresh experiment:
+| Method | MAE (electrons) | RMSE (electrons) | Bias (electrons) |
+|---|---:|---:|---:|
+| Aperture photometry | 61.13 | 79.64 | 2.71 |
+| Gaussian PSF fitting | **54.63** | **72.44** | 3.78 |
+| Ridge regression | 85.90 | 109.60 | 3.65 |
+| CNN | 76.06 | 99.25 | 13.35 |
 
-```bash
-python -m research.run --stage data
-python -m research.run --stage classical
-python -m research.run --stage train
-python -m research.run --stage evaluate
-python -m research.run --stage experiments
-python -m research.run --stage figures
-python scripts/build_article.py
-python -m pytest -q
-python scripts/check_site.py
-```
+Gaussian PSF fitting achieved the lowest MAE and RMSE in this experiment. The CNN performed better than Ridge regression but did not outperform either classical photometric method.
 
-`train` trains direct Ridge, residual Ridge, the grouped feature ablation, and the CNN. `configs/default.json` controls run sizes and budget. All paths resolve from the repository root. Stages overwrite their own artifacts; copy an old run before rerunning. `scripts/vendor_framework.py` is only needed to refresh vendor assets, not for normal builds. The built website needs no Python.
+One of the more interesting findings was that a relatively simple mathematical model of how a star's light spreads across an image was more accurate than the trained ML models under the simulated conditions.
 
-## Evidence
+This doesn't mean machine learning is unsuitable for astronomical photometry. It suggests that conventional methods can be difficult to outperform when their assumptions closely match the data.
 
-- `results/metrics/test_predictions.csv`: same-object comparison, ground truth and diagnostics.
-- `results/metrics/summary.json`: computed metrics and paired bootstrap intervals.
-- `results/metrics/experiments.csv`: ten conditions, six estimators including ablation.
-- `results/models/`: actually fitted Ridge pipelines, CNN checkpoint and epoch history.
-- `data/`: all generated cutouts, metadata and classical features.
-- `results/experiment_manifest.json`: hashes, seeds, units and machine-readable provenance.
-- `report/TECHNICAL_REPORT.md` and `report/VERIFICATION.md`: findings and limits.
+## What I Learned
 
-The uploaded source contained historical aggregate metrics only, not the original code, arrays or checkpoint. Historical numbers remain unverified and are never mixed with the new run. No real telescope observations were used.
+- How astronomical images represent stellar flux and how noise affects photometric measurements.
+- How aperture photometry and PSF fitting estimate brightness using different assumptions.
+- How to build and evaluate regression models for scientific measurements.
+- Why comparing machine-learning models against established numerical methods is important.
+- How to interpret prediction errors, systematic bias, and negative experimental results.
 
-## Repository organisation
+## Limitations
 
-The scientific implementation is deliberately compact: `research/core.py` (simulation/photometry/metrics), `research/models.py` (CNN), `research/run.py` (stages/training/evaluation), `research/figures.py` (plots). `website/` contains article source and native framework assets; `public/` is the deployable output. `scripts/build_article.py` builds article prose/tables directly from outputs.
+- The experiments used synthetic astronomical images rather than real telescope observations.
+- The results depend on the simulated PSF shapes, noise distributions, and background conditions.
+- Performance on real astronomical datasets has not yet been established.
+- The reported comparison does not demonstrate that machine learning is generally inferior to PSF fitting.
 
-## Framework and licensing
+## Tools Used
 
-The official https://distill.pub/template.v2.js distribution is vendored, including an unmodified copy. Only its KaTeX URLs are localised in the runtime copy. The requested template commit and original example were inspected, but the downloaded distribution is not asserted to be built from that commit. Shared Distill typography and grid are used without redesign. Article-specific GNN diagrams and editorial branding were not copied. This is not an official Distill publication. See `website/vendor/provenance.json`, LICENSE and NOTICE. Newly generated project code is offered under Apache 2.0; third-party assets retain their licenses.
+- **Python:** Dataset generation and analysis
+- **NumPy and SciPy:** Numerical processing and fitting
+- **Astropy:** Astronomical image handling
+- **scikit-learn:** Ridge regression
+- **PyTorch:** CNN implementation and training
+- **Matplotlib:** Results visualisation
 
-See DEPLOYMENT.md for Vercel instructions and SCIENTIFIC_LIMITATIONS.md before interpreting results.
-# ML--assisted-photometry-of-faint-stars-
+## Conclusion
+
+This project was an attempt to understand where machine learning fits into a problem that already has well-established scientific solutions.
+
+The main result was that Gaussian PSF fitting remained the most accurate approach on the synthetic test set, despite the use of more flexible data-driven models.
+
+The next step would be to evaluate these methods on real astronomical observations and investigate whether machine learning becomes more useful under more complex imaging conditions.
