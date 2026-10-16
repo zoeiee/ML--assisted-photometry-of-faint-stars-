@@ -1,0 +1,31 @@
+{
+  "faint": {
+    "flux": 150.0
+  },
+  "bright": {
+    "flux": 2000.0
+  },
+  "sky_high": {
+    "sky": 100.0
+  },
+  "read_high": {
+    "read": 10.0
+  },
+  "wide_psf": {
+    "sigma": 2.2
+  },
+  "elliptical": {
+    "ratio": 0.65,
+    "theta": 0.6
+  },
+  "moffat": {
+    "shape": "moffat"
+  },
+  "crowded": {
+    "neighbor": 0.7
+  },
+  "gradient": {
+    "gradient": 0.5
+  },
+  "control": {}
+}

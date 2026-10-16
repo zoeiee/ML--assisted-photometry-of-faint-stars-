@@ -1,0 +1,1 @@
+{"seed":20261016,"n_train":7000,"n_val":1000,"n_test":2000,"epochs":35,"patience":7,"batch_size":128,"learning_rate":0.001,"experiment_n":200,"bootstrap_repetitions":1000,"units":"electrons","gain_e_per_adu":1,"exposure":"flux is already integrated over one exposure"}

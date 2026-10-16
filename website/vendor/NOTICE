@@ -1,0 +1,5 @@
+Distill Template — Copyright 2018 The Distill Template Authors.
+Apache License, Version 2.0. Official distribution: https://distill.pub/template.v2.js
+The distributed template is used directly. Only its two KaTeX URL references are changed to local vendored paths. Original unmodified bundle is included.
+KaTeX: Copyright (c) 2013-2020 Khan Academy and other contributors, MIT license. See katex/LICENSE.
+This independent article is not an official Distill publication.

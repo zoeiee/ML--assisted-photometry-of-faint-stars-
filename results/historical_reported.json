@@ -1,0 +1,1 @@
+{"status":"user_reported_unverified","source":"uploaded master project prompt","original_artifacts_supplied":false,"units":"electrons","metrics":{"Aperture":{"mae":61.13,"rmse":79.64,"bias":2.71},"PSF":{"mae":54.63,"rmse":72.44,"bias":3.78},"Ridge":{"mae":85.90,"rmse":109.60,"bias":3.65},"CNN":{"mae":76.059,"rmse":99.253,"bias":13.345,"median_relative_percent":5.620}}}

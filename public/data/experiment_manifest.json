@@ -1,0 +1,757 @@
+{
+  "experiment_id": "stellar-new-20261016",
+  "status": "executed_new_synthetic_run_not_historical_reproduction",
+  "config": {
+    "seed": 20261016,
+    "n_train": 7000,
+    "n_val": 1000,
+    "n_test": 2000,
+    "epochs": 35,
+    "patience": 7,
+    "batch_size": 128,
+    "learning_rate": 0.001,
+    "experiment_n": 200,
+    "bootstrap_repetitions": 1000,
+    "units": "electrons",
+    "gain_e_per_adu": 1,
+    "exposure": "flux is already integrated over one exposure"
+  },
+  "units": "electrons",
+  "metric_definitions": {
+    "mae": "mean(abs(pred-truth))",
+    "rmse": "sqrt(mean((pred-truth)^2))",
+    "bias": "mean(pred-truth)",
+    "median_relative_percent": "100*median(abs(pred-truth)/truth)"
+  },
+  "summary": {
+    "Aperture": {
+      "mae": 41.62327502328954,
+      "rmse": 52.84420686102084,
+      "bias": 7.401907811227623,
+      "median_relative_percent": 5.67991583884622,
+      "mae_95_bootstrap": [
+        40.31248877633392,
+        43.02493860355272
+      ],
+      "mae_minus_psf_95_paired": [
+        -4.546498127182401,
+        -0.8416729610449465
+      ]
+    },
+    "PSF": {
+      "mae": 44.36105082247159,
+      "rmse": 57.93560864980066,
+      "bias": 3.013651228308405,
+      "median_relative_percent": 5.6590628653893225,
+      "mae_95_bootstrap": [
+        42.79932856178487,
+        45.92395063496343
+      ],
+      "mae_minus_psf_95_paired": [
+        0.0,
+        0.0
+      ]
+    },
+    "CNN": {
+      "mae": 35.83859438105511,
+      "rmse": 46.40674205645892,
+      "bias": -3.5084394679951347,
+      "median_relative_percent": 4.952439033746871,
+      "mae_95_bootstrap": [
+        34.47758604787103,
+        37.04624219781498
+      ],
+      "mae_minus_psf_95_paired": [
+        -10.203578964232285,
+        -6.707143384078465
+      ]
+    },
+    "Ridge": {
+      "mae": 34.83674607876301,
+      "rmse": 44.73342740173313,
+      "bias": 1.38939292356269,
+      "median_relative_percent": 4.661094975168713,
+      "mae_95_bootstrap": [
+        33.617987202254334,
+        36.010102285913185
+      ],
+      "mae_minus_psf_95_paired": [
+        -10.846839384278542,
+        -8.000516945115951
+      ]
+    },
+    "Residual": {
+      "mae": 34.840007761784534,
+      "rmse": 44.74322613562888,
+      "bias": 1.3760163874845657,
+      "median_relative_percent": 4.669805993097946,
+      "mae_95_bootstrap": [
+        33.6137990495213,
+        36.012151807697
+      ],
+      "mae_minus_psf_95_paired": [
+        -10.852195399763785,
+        -8.00400118532681
+      ]
+    },
+    "Ablation": {
+      "mae": 38.18591366420787,
+      "rmse": 48.59028843444259,
+      "bias": 0.9846509101701056,
+      "median_relative_percent": 5.071892524017532,
+      "mae_95_bootstrap": [
+        36.86550217063481,
+        39.532805940470425
+      ],
+      "mae_minus_psf_95_paired": [
+        -7.7668262647487945,
+        -4.410279878364897
+      ]
+    }
+  },
+  "scenario_parameters": {
+    "faint": {
+      "flux": 150.0
+    },
+    "bright": {
+      "flux": 2000.0
+    },
+    "sky_high": {
+      "sky": 100.0
+    },
+    "read_high": {
+      "read": 10.0
+    },
+    "wide_psf": {
+      "sigma": 2.2
+    },
+    "elliptical": {
+      "ratio": 0.65,
+      "theta": 0.6
+    },
+    "moffat": {
+      "shape": "moffat"
+    },
+    "crowded": {
+      "neighbor": 0.7
+    },
+    "gradient": {
+      "gradient": 0.5
+    },
+    "control": {}
+  },
+  "scenario_results": [
+    {
+      "experiment": "faint",
+      "method": "Aperture",
+      "n": 200,
+      "mae": 36.08206772607911,
+      "rmse": 44.48619859118987,
+      "bias": 10.66070267973368,
+      "median_relative_percent": 20.37203492672961
+    },
+    {
+      "experiment": "faint",
+      "method": "PSF",
+      "n": 200,
+      "mae": 37.35655831336343,
+      "rmse": 51.23799378590424,
+      "bias": 9.901986258027012,
+      "median_relative_percent": 19.54144876898118
+    },
+    {
+      "experiment": "faint",
+      "method": "CNN",
+      "n": 200,
+      "mae": 23.96701110839844,
+      "rmse": 29.41627506068516,
+      "bias": 3.684269409179688,
+      "median_relative_percent": 14.726656595865885
+    },
+    {
+      "experiment": "faint",
+      "method": "Ridge",
+      "n": 200,
+      "mae": 29.19403289720217,
+      "rmse": 34.80791559347575,
+      "bias": 8.371194308168066,
+      "median_relative_percent": 17.555787654405663
+    },
+    {
+      "experiment": "faint",
+      "method": "Residual",
+      "n": 200,
+      "mae": 29.2243399021392,
+      "rmse": 34.85496247283794,
+      "bias": 8.748200477727737,
+      "median_relative_percent": 17.59826771989559
+    },
+    {
+      "experiment": "faint",
+      "method": "Ablation",
+      "n": 200,
+      "mae": 34.64352840670357,
+      "rmse": 41.91785516718885,
+      "bias": 7.734924050476343,
+      "median_relative_percent": 20.910317367077408
+    },
+    {
+      "experiment": "bright",
+      "method": "Aperture",
+      "n": 200,
+      "mae": 53.40529904079182,
+      "rmse": 66.94895845158413,
+      "bias": 3.7456052855045607,
+      "median_relative_percent": 2.2947716028367324
+    },
+    {
+      "experiment": "bright",
+      "method": "PSF",
+      "n": 200,
+      "mae": 54.6435019908589,
+      "rmse": 67.04694611798197,
+      "bias": 0.7758992164117047,
+      "median_relative_percent": 2.3013715182087875
+    },
+    {
+      "experiment": "bright",
+      "method": "CNN",
+      "n": 200,
+      "mae": 47.52129150390625,
+      "rmse": 59.8250184109628,
+      "bias": -0.342835693359375,
+      "median_relative_percent": 2.0294311523437503
+    },
+    {
+      "experiment": "bright",
+      "method": "Ridge",
+      "n": 200,
+      "mae": 47.91029709728058,
+      "rmse": 61.59164724526388,
+      "bias": -0.3744636875698927,
+      "median_relative_percent": 2.110647067781008
+    },
+    {
+      "experiment": "bright",
+      "method": "Residual",
+      "n": 200,
+      "mae": 47.909624984911154,
+      "rmse": 61.6281574121428,
+      "bias": -0.397914121291243,
+      "median_relative_percent": 2.1147755376280486
+    },
+    {
+      "experiment": "bright",
+      "method": "Ablation",
+      "n": 200,
+      "mae": 49.41430823701287,
+      "rmse": 63.198480756307234,
+      "bias": -0.6156333647635313,
+      "median_relative_percent": 1.9616013008813864
+    },
+    {
+      "experiment": "sky_high",
+      "method": "Aperture",
+      "n": 200,
+      "mae": 71.14824188575996,
+      "rmse": 90.67835357230884,
+      "bias": 4.749740234001105,
+      "median_relative_percent": 7.914471763791542
+    },
+    {
+      "experiment": "sky_high",
+      "method": "PSF",
+      "n": 200,
+      "mae": 82.30818865985206,
+      "rmse": 113.54127616666555,
+      "bias": 12.80187720783421,
+      "median_relative_percent": 9.022264894827508
+    },
+    {
+      "experiment": "sky_high",
+      "method": "CNN",
+      "n": 200,
+      "mae": 61.04712153403497,
+      "rmse": 77.04603244243386,
+      "bias": 8.37507054284416,
+      "median_relative_percent": 7.939969688273789
+    },
+    {
+      "experiment": "sky_high",
+      "method": "Ridge",
+      "n": 200,
+      "mae": 2265.528923564688,
+      "rmse": 2266.872898404868,
+      "bias": 2265.528923564688,
+      "median_relative_percent": 381.9875389502888
+    },
+    {
+      "experiment": "sky_high",
+      "method": "Residual",
+      "n": 200,
+      "mae": 2258.97383612726,
+      "rmse": 2260.299553748586,
+      "bias": 2258.97383612726,
+      "median_relative_percent": 380.4766230641666
+    },
+    {
+      "experiment": "sky_high",
+      "method": "Ablation",
+      "n": 200,
+      "mae": 4109.419856942952,
+      "rmse": 4110.215843795548,
+      "bias": 4109.419856942952,
+      "median_relative_percent": 696.1875870145018
+    },
+    {
+      "experiment": "read_high",
+      "method": "Aperture",
+      "n": 200,
+      "mae": 72.219487691755,
+      "rmse": 92.04377361569772,
+      "bias": 15.854603421191744,
+      "median_relative_percent": 8.82977984472385
+    },
+    {
+      "experiment": "read_high",
+      "method": "PSF",
+      "n": 200,
+      "mae": 83.61055021653027,
+      "rmse": 107.10057746952369,
+      "bias": 21.804611798327123,
+      "median_relative_percent": 9.233169143110237
+    },
+    {
+      "experiment": "read_high",
+      "method": "CNN",
+      "n": 200,
+      "mae": 61.107079167156186,
+      "rmse": 78.35958446144579,
+      "bias": 20.424913096813995,
+      "median_relative_percent": 8.020882640934435
+    },
+    {
+      "experiment": "read_high",
+      "method": "Ridge",
+      "n": 200,
+      "mae": 59.13158755724724,
+      "rmse": 75.50860931347562,
+      "bias": 24.2368015639614,
+      "median_relative_percent": 6.898121705599464
+    },
+    {
+      "experiment": "read_high",
+      "method": "Residual",
+      "n": 200,
+      "mae": 58.31937354198463,
+      "rmse": 74.5511922370061,
+      "bias": 21.52828653299285,
+      "median_relative_percent": 7.014894968759113
+    },
+    {
+      "experiment": "read_high",
+      "method": "Ablation",
+      "n": 200,
+      "mae": 63.38540557037319,
+      "rmse": 79.3591572757057,
+      "bias": 4.964793063884108,
+      "median_relative_percent": 7.15249232648947
+    },
+    {
+      "experiment": "wide_psf",
+      "method": "Aperture",
+      "n": 200,
+      "mae": 162.7364779098364,
+      "rmse": 220.4552130921007,
+      "bias": -159.69887533177888,
+      "median_relative_percent": 18.453060340729703
+    },
+    {
+      "experiment": "wide_psf",
+      "method": "PSF",
+      "n": 200,
+      "mae": 102.31356545447278,
+      "rmse": 131.24792006387457,
+      "bias": 7.780833082206388,
+      "median_relative_percent": 13.84386899325366
+    },
+    {
+      "experiment": "wide_psf",
+      "method": "CNN",
+      "n": 200,
+      "mae": 167.1662626723585,
+      "rmse": 204.6148461877385,
+      "bias": -166.74049851946126,
+      "median_relative_percent": 20.087836761511237
+    },
+    {
+      "experiment": "wide_psf",
+      "method": "Ridge",
+      "n": 200,
+      "mae": 144.5447904284001,
+      "rmse": 176.9576687240266,
+      "bias": -143.45998104999174,
+      "median_relative_percent": 18.635641484645426
+    },
+    {
+      "experiment": "wide_psf",
+      "method": "Residual",
+      "n": 200,
+      "mae": 144.51404642095687,
+      "rmse": 176.96800527418458,
+      "bias": -143.39276174660958,
+      "median_relative_percent": 18.693491081521778
+    },
+    {
+      "experiment": "wide_psf",
+      "method": "Ablation",
+      "n": 200,
+      "mae": 167.38899407262252,
+      "rmse": 226.1125600532921,
+      "bias": -165.3264663448726,
+      "median_relative_percent": 18.436621187395453
+    },
+    {
+      "experiment": "elliptical",
+      "method": "Aperture",
+      "n": 200,
+      "mae": 43.9149437503318,
+      "rmse": 54.51519314144674,
+      "bias": 8.186171967393744,
+      "median_relative_percent": 5.303736802575129
+    },
+    {
+      "experiment": "elliptical",
+      "method": "PSF",
+      "n": 200,
+      "mae": 44.85947583715932,
+      "rmse": 55.910670156624604,
+      "bias": -21.70203354530985,
+      "median_relative_percent": 5.660744824679861
+    },
+    {
+      "experiment": "elliptical",
+      "method": "CNN",
+      "n": 200,
+      "mae": 36.211127548391495,
+      "rmse": 46.577508933034736,
+      "bias": 10.56998783809712,
+      "median_relative_percent": 5.021085053888191
+    },
+    {
+      "experiment": "elliptical",
+      "method": "Ridge",
+      "n": 200,
+      "mae": 37.44414499427198,
+      "rmse": 47.74981924333628,
+      "bias": 14.033915782193294,
+      "median_relative_percent": 4.908874773130044
+    },
+    {
+      "experiment": "elliptical",
+      "method": "Residual",
+      "n": 200,
+      "mae": 37.37477762426419,
+      "rmse": 47.6855400142777,
+      "bias": 13.842712745878318,
+      "median_relative_percent": 4.946330593261962
+    },
+    {
+      "experiment": "elliptical",
+      "method": "Ablation",
+      "n": 200,
+      "mae": 40.79932066755533,
+      "rmse": 50.8571973194997,
+      "bias": 5.277581010653288,
+      "median_relative_percent": 4.971101345462345
+    },
+    {
+      "experiment": "moffat",
+      "method": "Aperture",
+      "n": 200,
+      "mae": 123.71677396502692,
+      "rmse": 169.88300363123355,
+      "bias": -114.44000863581238,
+      "median_relative_percent": 12.855081393286966
+    },
+    {
+      "experiment": "moffat",
+      "method": "PSF",
+      "n": 200,
+      "mae": 181.252915107966,
+      "rmse": 241.4199717411335,
+      "bias": -163.66893641855887,
+      "median_relative_percent": 18.7438252139202
+    },
+    {
+      "experiment": "moffat",
+      "method": "CNN",
+      "n": 200,
+      "mae": 121.86659008531036,
+      "rmse": 158.0733229143967,
+      "bias": -119.08559606074536,
+      "median_relative_percent": 13.256797067233666
+    },
+    {
+      "experiment": "moffat",
+      "method": "Ridge",
+      "n": 200,
+      "mae": 152.3930812786478,
+      "rmse": 205.7943011020716,
+      "bias": -148.94692367065085,
+      "median_relative_percent": 16.202794883235995
+    },
+    {
+      "experiment": "moffat",
+      "method": "Residual",
+      "n": 200,
+      "mae": 152.51715059525478,
+      "rmse": 205.95335203553088,
+      "bias": -149.04811562074042,
+      "median_relative_percent": 16.272743348015645
+    },
+    {
+      "experiment": "moffat",
+      "method": "Ablation",
+      "n": 200,
+      "mae": 124.04833824139104,
+      "rmse": 168.6382144740998,
+      "bias": -116.73155779372904,
+      "median_relative_percent": 13.103580459094594
+    },
+    {
+      "experiment": "crowded",
+      "method": "Aperture",
+      "n": 200,
+      "mae": 357.83123329296234,
+      "rmse": 489.1872774251821,
+      "bias": 357.08209194352906,
+      "median_relative_percent": 41.51761493562258
+    },
+    {
+      "experiment": "crowded",
+      "method": "PSF",
+      "n": 200,
+      "mae": 446.9592344074872,
+      "rmse": 651.500319457989,
+      "bias": 425.6406976564072,
+      "median_relative_percent": 58.9217509390291
+    },
+    {
+      "experiment": "crowded",
+      "method": "CNN",
+      "n": 200,
+      "mae": 265.0432180544765,
+      "rmse": 376.2231097028128,
+      "bias": 264.0030485746611,
+      "median_relative_percent": 28.87740282562602
+    },
+    {
+      "experiment": "crowded",
+      "method": "Ridge",
+      "n": 200,
+      "mae": 381.8039454427705,
+      "rmse": 540.7179771077501,
+      "bias": 380.3642536812537,
+      "median_relative_percent": 42.838393505535365
+    },
+    {
+      "experiment": "crowded",
+      "method": "Residual",
+      "n": 200,
+      "mae": 381.2344728322756,
+      "rmse": 539.8165931309438,
+      "bias": 379.816978128168,
+      "median_relative_percent": 42.81644784587993
+    },
+    {
+      "experiment": "crowded",
+      "method": "Ablation",
+      "n": 200,
+      "mae": 352.08699803386435,
+      "rmse": 482.6274177832922,
+      "bias": 351.51003824152417,
+      "median_relative_percent": 40.95276793505364
+    },
+    {
+      "experiment": "gradient",
+      "method": "Aperture",
+      "n": 200,
+      "mae": 45.81126523619528,
+      "rmse": 56.67488457513161,
+      "bias": 15.17539823200425,
+      "median_relative_percent": 6.49079719560132
+    },
+    {
+      "experiment": "gradient",
+      "method": "PSF",
+      "n": 200,
+      "mae": 70.98553118685527,
+      "rmse": 108.31782005093191,
+      "bias": 22.68922072455169,
+      "median_relative_percent": 7.174546689464337
+    },
+    {
+      "experiment": "gradient",
+      "method": "CNN",
+      "n": 200,
+      "mae": 48.26704476665265,
+      "rmse": 61.29566272572929,
+      "bias": -36.86361677378864,
+      "median_relative_percent": 8.118341197923591
+    },
+    {
+      "experiment": "gradient",
+      "method": "Ridge",
+      "n": 200,
+      "mae": 39.70739472722224,
+      "rmse": 50.36753117434114,
+      "bias": 1.8130602580746285,
+      "median_relative_percent": 5.8363407680927
+    },
+    {
+      "experiment": "gradient",
+      "method": "Residual",
+      "n": 200,
+      "mae": 39.64668376241136,
+      "rmse": 50.27773159165412,
+      "bias": 1.589992382166869,
+      "median_relative_percent": 5.913107968235387
+    },
+    {
+      "experiment": "gradient",
+      "method": "Ablation",
+      "n": 200,
+      "mae": 39.72072353741955,
+      "rmse": 50.10274802248527,
+      "bias": -2.3229215800583094,
+      "median_relative_percent": 5.5382492233872895
+    },
+    {
+      "experiment": "control",
+      "method": "Aperture",
+      "n": 200,
+      "mae": 41.88876125275127,
+      "rmse": 52.33664554138881,
+      "bias": 9.73258168443746,
+      "median_relative_percent": 5.87287520283849
+    },
+    {
+      "experiment": "control",
+      "method": "PSF",
+      "n": 200,
+      "mae": 43.420893876700376,
+      "rmse": 54.161286030128274,
+      "bias": 1.4571812205918238,
+      "median_relative_percent": 5.3284231456725575
+    },
+    {
+      "experiment": "control",
+      "method": "CNN",
+      "n": 200,
+      "mae": 35.66199445489775,
+      "rmse": 45.76017583404404,
+      "bias": -2.6820691915466037,
+      "median_relative_percent": 4.820133424245558
+    },
+    {
+      "experiment": "control",
+      "method": "Ridge",
+      "n": 200,
+      "mae": 33.01621941620505,
+      "rmse": 42.52283726576904,
+      "bias": 1.6682260539933094,
+      "median_relative_percent": 4.18670825865697
+    },
+    {
+      "experiment": "control",
+      "method": "Residual",
+      "n": 200,
+      "mae": 33.037061965218044,
+      "rmse": 42.54838337572068,
+      "bias": 1.7105306250545786,
+      "median_relative_percent": 4.246284991987771
+    },
+    {
+      "experiment": "control",
+      "method": "Ablation",
+      "n": 200,
+      "mae": 36.72888480160736,
+      "rmse": 46.71809011005742,
+      "bias": 3.8441178415147306,
+      "median_relative_percent": 4.324766794868226
+    }
+  ],
+  "figure_source": "research/figures.py",
+  "prediction_source": "results/metrics/test_predictions.csv",
+  "dataset_parameters": {
+    "shape": [
+      32,
+      32
+    ],
+    "flux_distribution": "log-uniform 100\u20133000 electrons",
+    "sigma": "uniform 1.1\u20131.5 pixels",
+    "sky": 20,
+    "read_noise": 3,
+    "profile": "circular Gaussian",
+    "pixel_integration": "2x2 midpoint quadrature",
+    "normalisation": "finite stamp"
+  },
+  "model_checkpoints": {
+    "stellar_cnn.pt": "fc1c1bc928b259c49962e7b1e93ad8496927140908af45eea6ada88d06680f48",
+    "Ridge.joblib": "fa480049ed0391c5af4320cf2243d0c25ccef1cf7df0762d9e838b6be8d58805",
+    "Residual.joblib": "706bf3970497515d3cc506f692e9bec5492139b7a69adcdf9b9cfa6cb180b414",
+    "Ablation.joblib": "a759eec89394630a3e82a7a30bbc263027ed4c4e019bdefb5965de4f6a61f777"
+  },
+  "sha256": {
+    "data/experiment_elliptical.npz": "c7727539c9e5f5b6130bb885fa82aaf12bb3ab917d29e53ccb719304f89bdce3",
+    "data/experiment_bright.npz": "a108712dcb7fa14993a080b3592b6cf30a4f5e0d644078d793beec8e8979ce87",
+    "data/experiment_crowded.npz": "4557fde7ac05d2da7b2fe113a7d7299edd04223755e7249521ec97dd3d9d2373",
+    "data/val.npz": "bdd893c0fc798900a16d059b599833092b17b6711b4de2000acab56baf0234c3",
+    "data/experiment_wide_psf.npz": "84e62d6c723737db8568272b6d57ec10331c21743a9495d894c2ce299f63265d",
+    "data/test_features.npy": "9fea586990938ffa92a89a13955ef855d9985fb8b6ba39672507e0024169dd86",
+    "data/val_metadata.csv": "c314d32d5c328d424c248ba3d1d428df42c8f29396125487b0118c7e608d3326",
+    "data/experiment_read_high.npz": "292b48870086a33f7dcd39c58dbbaceec6fa1d62bfbf26784bcf558189e18520",
+    "data/train_features.npy": "5660db88fcaf0f8991f319a5921088621601a554725b0e88d3e694c2e0971f6a",
+    "data/experiment_moffat.npz": "192521c0a75fe74bc2b05e42d31716e887ab96590fcb8245bffd81f565956ab8",
+    "data/train.npz": "07d583c7d35144f24368a7e4e8a42c4952293f7dd13fb6ed682bdef5bf6b5708",
+    "data/experiment_control.npz": "8bc30661dc0a95d52c1750fc76ba13fe0c0454a535bc2dfcf41d6ca95c5d4bc2",
+    "data/train_metadata.csv": "c19fd5c191265ac7be8edd67146389ea09cde19d0995f0513560a068e12d6994",
+    "data/test.npz": "479b7e76d56037cd08c8774183819f13c2ca52ec47f2b491bd4a4a0ca23bbdc7",
+    "data/val_features.npy": "3949cbe2b1b2b005148c11338bc9a82dd04401c35b6b4ef8f89ad5e8247ea7bd",
+    "data/experiment_sky_high.npz": "c3629ca29c6e2b303e6d05814c175a5b63e42eb8eec5d1a48ff66b8ce876eaf3",
+    "data/experiment_faint.npz": "e1ed4982775c66935110afecc61a4dd579b6e13e5b20183e2091adbfc6d33042",
+    "data/test_metadata.csv": "829aed1f6c5f701eb853e5e8137514e2ea6fc121bcb7d7789d469733b5def89d",
+    "data/experiment_gradient.npz": "442410b79444960edd52e254e726953463270f58b3e26fa86240cae99bedb960",
+    "results/models/stellar_cnn.pt": "fc1c1bc928b259c49962e7b1e93ad8496927140908af45eea6ada88d06680f48",
+    "results/models/history.csv": "2e2aee7f4dd0f513a5683812c1ff869b29489010f2bed61212e57cdf83069beb",
+    "results/models/Ablation.joblib": "a759eec89394630a3e82a7a30bbc263027ed4c4e019bdefb5965de4f6a61f777",
+    "results/models/Ridge.joblib": "fa480049ed0391c5af4320cf2243d0c25ccef1cf7df0762d9e838b6be8d58805",
+    "results/models/selection.json": "470f3e03ef868429f83812d0d5e5ea1e72d41d206c58b1970b760d6b063dc81c",
+    "results/models/Residual.joblib": "706bf3970497515d3cc506f692e9bec5492139b7a69adcdf9b9cfa6cb180b414",
+    "results/metrics/experiment_bright.csv": "0d44016f0b937e9ebf3dda72e80668245b9100b6082a292246142b68afb4f766",
+    "results/metrics/test_predictions.csv": "3900e919b465e92c86fb1c015994432ca38422f76cab89e866ba269c138074c6",
+    "results/metrics/experiment_moffat.csv": "3b5a757da5a1021f09db4e5443d0a707a9f580b3d6d007411425ad107c4af68f",
+    "results/metrics/experiment_sky_high.csv": "f363034a5dff9a34f62e4b9d213cd30701e912ccdf4f7cca3d2cb30ce62c8614",
+    "results/metrics/experiment_gradient.csv": "7ee7e7aa3916a3153de0df766aa7ebce0af3f0dfa29c8f538a284e6522723242",
+    "results/metrics/experiment_wide_psf.csv": "3242b9d0fa0210cdd6b309bda301cdd952c316ab100e83a0ca813c3e2e9deb91",
+    "results/metrics/experiment_read_high.csv": "dd480555d45be14d62890c6459cacad606df8b01f50c890cedfeffde56368d16",
+    "results/metrics/experiment_crowded.csv": "8bec3b9ced433124d1e6acc7beb0ec58f96ccc1013419f606fdaa7391c1d4981",
+    "results/metrics/quality.json": "684d626398f8d8f677c79d9ebd9705d0b89596d90ccc6b2541a900439548f575",
+    "results/metrics/experiment_faint.csv": "79d23325b18316946dde2a4e2aec9bc1b582ede32d8762f307d122920e84c7df",
+    "results/metrics/experiment_control.csv": "d54fa861e60101a513a8550fb41ac8eaf140b40069003a7a1c0cc11d1e8079fa",
+    "results/metrics/experiment_elliptical.csv": "49ca63bf261b9ec6731ff30d39b8e7426d5db72657e904e71fe1d49b3161c376",
+    "results/metrics/experiments.csv": "4e3e145bc22d314e7cd727683d1601d20536360e267865910fad4cbca7688346",
+    "results/metrics/summary.json": "ace5dad605e09c33f1c622f317f5f29c3c6f92669ca0921ec297b5297ee9174d"
+  },
+  "python": "3.12.14",
+  "torch": "2.14.1+cpu",
+  "real_data": false,
+  "limitations": [
+    "Single training seed",
+    "No original dataset/checkpoint supplied",
+    "Finite-stamp flux normalization",
+    "CNN budget limited",
+    "Scenario sweeps are synthetic stress tests"
+  ]
+}

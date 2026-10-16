@@ -1,0 +1,427 @@
+{
+  "distribution": "Official template.v2.js; not asserted to equal the referenced source commit",
+  "retrieved": "2026-10-16",
+  "modifications": "Only KaTeX asset URLs changed to local relative paths",
+  "assets": [
+    {
+      "url": "https://distill.pub/template.v2.js",
+      "sha256": "6cbf1d5f393fe8c4d03d9309ae758e416cb71727b59da4916c034429cfbd510e",
+      "file": "template.v2.original.js"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/katex.min.js",
+      "sha256": "26fe55ad21d8c71066875f21414be20783a25733a40c774ed2e6381adac23034",
+      "file": "katex.min.js"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/katex.min.css",
+      "sha256": "9006d7f59e593218e8df83d118431ced18ae79ebe56e60e296f52dd4db191802",
+      "file": "katex.min.css"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/distillpub/template/bf862cc4fe8abd56a94759453801fd04529fad9b/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "file": "LICENSE"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Main-Italic.woff",
+      "sha256": "d1459a507feeef6aa808fe9e152cc32b9e9af348170a18746136839f93f07949",
+      "file": "KaTeX_Main-Italic.woff"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Caligraphic-Bold.woff",
+      "sha256": "008927b03149863af799049c7b43294d731783cbe880aeaeac13ce25dc43de58",
+      "file": "KaTeX_Caligraphic-Bold.woff"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Script-Regular.ttf",
+      "sha256": "e9db5630da8ecc30d0c1865db6aa897725b2e13541fe4625cfd9fb0e2ad950ad",
+      "file": "KaTeX_Script-Regular.ttf"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Caligraphic-Bold.ttf",
+      "sha256": "459bdcf63a3840802d0401089a280e76a32294abc69fec4c8cdbe5a9a3caa570",
+      "file": "KaTeX_Caligraphic-Bold.ttf"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Fraktur-Regular.ttf",
+      "sha256": "3879bec97ae2820076782475eb0b48530abc9705e2362628a4b4ae47032195bd",
+      "file": "KaTeX_Fraktur-Regular.ttf"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Size4-Regular.ttf",
+      "sha256": "fbe14073ea57f03a22da381437156cc56ffc9209810d22a88455816c3f876f2e",
+      "file": "KaTeX_Size4-Regular.ttf"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_AMS-Regular.woff2",
+      "sha256": "d728466fd44b2cbed7900e3e92ab80da94186e8cd517fdfd357c59215027da06",
+      "file": "KaTeX_AMS-Regular.woff2"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Size3-Regular.eot",
+      "sha256": "bae9395180c2b896374eed2aa4a39720d66f73089618fa3458f0068374a6979a",
+      "file": "KaTeX_Size3-Regular.eot"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Fraktur-Bold.ttf",
+      "sha256": "20186af5b4da73a79ef6155f76b22cb04fb648ed78c355b650b9718d49963cf5",
+      "file": "KaTeX_Fraktur-Bold.ttf"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Typewriter-Regular.woff2",
+      "sha256": "b9143a753160025538aa78f1373d3602fbca9c9310324a3b50b941a6b943b97a",
+      "file": "KaTeX_Typewriter-Regular.woff2"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Main-Italic.woff2",
+      "sha256": "f2d5f3279bd91e9d3ee669f6c73525b5696ba546792add7063be0fe5b025a423",
+      "file": "KaTeX_Main-Italic.woff2"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Script-Regular.eot",
+      "sha256": "956b48558dfa2dc3fb0d498ef68f51f36e0601b32d2d8bf9c1f09c93e6ba03db",
+      "file": "KaTeX_Script-Regular.eot"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Script-Regular.eot#iefix",
+      "sha256": "956b48558dfa2dc3fb0d498ef68f51f36e0601b32d2d8bf9c1f09c93e6ba03db",
+      "file": "KaTeX_Script-Regular.eot#iefix"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Size3-Regular.ttf",
+      "sha256": "d1cbc7c6cb377fad9b9650d7bebf5c67b6aa03f44cbaedce75dce567da5598f9",
+      "file": "KaTeX_Size3-Regular.ttf"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Size3-Regular.woff2",
+      "sha256": "9d5935ef890057bed74d8bc020e4204c3f1373a8bfeaddf7ab7fca902e5ff202",
+      "file": "KaTeX_Size3-Regular.woff2"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Fraktur-Regular.woff2",
+      "sha256": "e3129625ee0f734bf273c98b7c2d53dfd6cc849ec962d76c2697b405355d2755",
+      "file": "KaTeX_Fraktur-Regular.woff2"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Main-Regular.woff",
+      "sha256": "016afc3b63046b0602f89e2d6e32251370da220b56f260d8077d6fb4071c65a1",
+      "file": "KaTeX_Main-Regular.woff"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Fraktur-Bold.woff2",
+      "sha256": "0b05f41deb49abdaf462e501ad3432c59b43eacfb47d540da242474c10a6fbf6",
+      "file": "KaTeX_Fraktur-Bold.woff2"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Math-Italic.eot#iefix",
+      "sha256": "cd90b0722d6bf66b6b557a527fbdca8337298dc1886f420ec07d8a739c0725ea",
+      "file": "KaTeX_Math-Italic.eot#iefix"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Math-Italic.ttf",
+      "sha256": "ffdaa1496fa0f34f718b50929afb4e544dea397492d6765f945249b605fe4886",
+      "file": "KaTeX_Math-Italic.ttf"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Fraktur-Regular.eot",
+      "sha256": "27acf4a4dc79ff1ce64acebfd1f5db97d565755a54728eab05b5a916d3231651",
+      "file": "KaTeX_Fraktur-Regular.eot"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Script-Regular.woff2",
+      "sha256": "6fde2d4adb1b6bc3d2f28bac1397312bdf40e5244801dcbd0e103a82a5fd83f2",
+      "file": "KaTeX_Script-Regular.woff2"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Fraktur-Regular.woff",
+      "sha256": "eb1704688fce0b409cac349f21736f5dce878896c813901159b61e4f1fc76b22",
+      "file": "KaTeX_Fraktur-Regular.woff"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Caligraphic-Regular.eot#iefix",
+      "sha256": "88f36891f47b5b1bcf9a7a63d578c04508732a79b11add074d140dc179755ba1",
+      "file": "KaTeX_Caligraphic-Regular.eot#iefix"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_AMS-Regular.eot#iefix",
+      "sha256": "0ca50506baa972f479594d95dbd2bf86e2f8a29307d07a6c239cd58ac14a5456",
+      "file": "KaTeX_AMS-Regular.eot#iefix"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Caligraphic-Regular.woff2",
+      "sha256": "d92a43077a3181f1eeed97520581d9f1ceaec435f38640e116385e6918966c4d",
+      "file": "KaTeX_Caligraphic-Regular.woff2"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_AMS-Regular.woff",
+      "sha256": "6a6b7a7b281467831d9f8761bbcd2bfcd7039d18d56a53a2ba2c232dcdbc2dfd",
+      "file": "KaTeX_AMS-Regular.woff"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Caligraphic-Regular.woff",
+      "sha256": "0e42a4b6474559b39362646f9cc1b5eb3d28a8c3becf48f33b965a1bc6071a9b",
+      "file": "KaTeX_Caligraphic-Regular.woff"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Caligraphic-Bold.woff2",
+      "sha256": "ca171d351b0e121c2d6dbe03dfe1f9cc76d742896da85c4f200c65dd10d09208",
+      "file": "KaTeX_Caligraphic-Bold.woff2"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Main-Bold.woff",
+      "sha256": "5a0d8c32be320667831bc5450f2cb243576a18fd38dc8fbb0e4995f126b20422",
+      "file": "KaTeX_Main-Bold.woff"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Caligraphic-Regular.eot",
+      "sha256": "88f36891f47b5b1bcf9a7a63d578c04508732a79b11add074d140dc179755ba1",
+      "file": "KaTeX_Caligraphic-Regular.eot"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Size1-Regular.woff2",
+      "sha256": "f3f0f6e8fb2073e330c6b20bb95b4895a0985fef1835a219224a151aadc31793",
+      "file": "KaTeX_Size1-Regular.woff2"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Main-Regular.eot#iefix",
+      "sha256": "67034028daa9821527985b157231043feee55ed7872ea165ec0892dfc2ceff02",
+      "file": "KaTeX_Main-Regular.eot#iefix"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Caligraphic-Regular.ttf",
+      "sha256": "7d68fac56dc3e8cc1c4a156971a61fe402f9b73181f2a43d18ae59f2e3a76e43",
+      "file": "KaTeX_Caligraphic-Regular.ttf"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Size4-Regular.eot",
+      "sha256": "6fa7e07d479fa0273944ad8ea2e9a94dac87640d00c1ff355b9c5b8822f7b7b2",
+      "file": "KaTeX_Size4-Regular.eot"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Size3-Regular.woff",
+      "sha256": "509137a926f674a920b5176076b45767ebf0692b42bb9095fef3bb1bc274f9cb",
+      "file": "KaTeX_Size3-Regular.woff"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Main-Italic.eot#iefix",
+      "sha256": "a34cfedff1b92cb556dec5ff2ed490ae4a2569cdac972d37ab6e05014990659c",
+      "file": "KaTeX_Main-Italic.eot#iefix"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Size2-Regular.woff",
+      "sha256": "3ae10fa0f5b394943263e3e533fe5b306780079dab7027a2e58930b29da853bf",
+      "file": "KaTeX_Size2-Regular.woff"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Size1-Regular.ttf",
+      "sha256": "b2a487fd51620e06b224a4158d0ccff3679e4a68b281ce5edfc7420b2ef20845",
+      "file": "KaTeX_Size1-Regular.ttf"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_SansSerif-Regular.woff",
+      "sha256": "1ef0b02e9b8fddba5a8584a9f0daefafde1c8a6a6ab57c6a5503f5d2eca8dbda",
+      "file": "KaTeX_SansSerif-Regular.woff"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Typewriter-Regular.eot#iefix",
+      "sha256": "17d25dca981cc2b3a7e89af003f8f59dc2b0b8a181b59883da60279df83a50fe",
+      "file": "KaTeX_Typewriter-Regular.eot#iefix"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Main-Regular.woff2",
+      "sha256": "15acf74f7b49f0e1684532d3b16624880610e0ce41e4518696dc6568fcf0612e",
+      "file": "KaTeX_Main-Regular.woff2"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Typewriter-Regular.eot",
+      "sha256": "17d25dca981cc2b3a7e89af003f8f59dc2b0b8a181b59883da60279df83a50fe",
+      "file": "KaTeX_Typewriter-Regular.eot"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Fraktur-Regular.eot#iefix",
+      "sha256": "27acf4a4dc79ff1ce64acebfd1f5db97d565755a54728eab05b5a916d3231651",
+      "file": "KaTeX_Fraktur-Regular.eot#iefix"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Typewriter-Regular.woff",
+      "sha256": "1413ff97f15c612820e09cc98c5c6a4c052ce73fe5c1d0cc37c1721ad45676bb",
+      "file": "KaTeX_Typewriter-Regular.woff"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Size2-Regular.eot#iefix",
+      "sha256": "2cdc93658e12734e66adff00b0e82d5105ba5a70d9b2f50fa50b76aee6267b44",
+      "file": "KaTeX_Size2-Regular.eot#iefix"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Caligraphic-Bold.eot#iefix",
+      "sha256": "34f3681a867dd38a2ff454ec8afed34f8ddc196c0ceb858b38cea34d48504507",
+      "file": "KaTeX_Caligraphic-Bold.eot#iefix"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Main-Regular.ttf",
+      "sha256": "8a69578a68af468c4ca238a652185a6968691ed7bf3d73d6322ff10b78d56ced",
+      "file": "KaTeX_Main-Regular.ttf"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Script-Regular.woff",
+      "sha256": "1e6d6ebc14842070d1ce5e50960140039320ac64609986a42cfc520ea68b9fe5",
+      "file": "KaTeX_Script-Regular.woff"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_SansSerif-Regular.ttf",
+      "sha256": "d41c14bb5ad1db9bd830822f28c45f8c998e27257b429d45c2e66199b52c9afe",
+      "file": "KaTeX_SansSerif-Regular.ttf"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Math-Italic.eot",
+      "sha256": "cd90b0722d6bf66b6b557a527fbdca8337298dc1886f420ec07d8a739c0725ea",
+      "file": "KaTeX_Math-Italic.eot"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Size3-Regular.eot#iefix",
+      "sha256": "bae9395180c2b896374eed2aa4a39720d66f73089618fa3458f0068374a6979a",
+      "file": "KaTeX_Size3-Regular.eot#iefix"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Caligraphic-Bold.eot",
+      "sha256": "34f3681a867dd38a2ff454ec8afed34f8ddc196c0ceb858b38cea34d48504507",
+      "file": "KaTeX_Caligraphic-Bold.eot"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_SansSerif-Regular.eot#iefix",
+      "sha256": "01c8db29e2ba618d7fe1cc7b8cb0d4cfeeeb5769baea4157df8a52beefbb30e9",
+      "file": "KaTeX_SansSerif-Regular.eot#iefix"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Main-Italic.eot",
+      "sha256": "a34cfedff1b92cb556dec5ff2ed490ae4a2569cdac972d37ab6e05014990659c",
+      "file": "KaTeX_Main-Italic.eot"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Size4-Regular.woff",
+      "sha256": "b4e0bf91223ce0a0d654f4ebd26db88a5cff3c0c0e5d3185cd5ecad7f88347ce",
+      "file": "KaTeX_Size4-Regular.woff"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_SansSerif-Regular.woff2",
+      "sha256": "884457a042c854c6ecceb384f383894d90e9bc1fbf287d9d0272954821c2453f",
+      "file": "KaTeX_SansSerif-Regular.woff2"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Size4-Regular.eot#iefix",
+      "sha256": "6fa7e07d479fa0273944ad8ea2e9a94dac87640d00c1ff355b9c5b8822f7b7b2",
+      "file": "KaTeX_Size4-Regular.eot#iefix"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Size2-Regular.ttf",
+      "sha256": "a7631dfe52f0c0e0534daa7d2182ebf239b8fe38d39ffded184fd4882ef179cf",
+      "file": "KaTeX_Size2-Regular.ttf"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Size4-Regular.woff2",
+      "sha256": "20bc63188ec455ce4721a6b02514cb704de1e2ebc280ad97c308a57475174e37",
+      "file": "KaTeX_Size4-Regular.woff2"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Size1-Regular.woff",
+      "sha256": "11a78fa143fd42301f549758849370da797b0aa35f3925bbb88619acc19a68ba",
+      "file": "KaTeX_Size1-Regular.woff"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Fraktur-Bold.woff",
+      "sha256": "2b273844209aa597a68f63294a384a1f122f7e6b99deae7dedaf128d2b10c6bf",
+      "file": "KaTeX_Fraktur-Bold.woff"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Main-Bold.ttf",
+      "sha256": "6722bc6c6d95f3b5ba162f34705e343f3cb1fa263671c997c236f8247f2e6800",
+      "file": "KaTeX_Main-Bold.ttf"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Size2-Regular.woff2",
+      "sha256": "1c10228b5ec390dd72c64522414071aaf791b1bbf426daaa9b94ac2cb079c256",
+      "file": "KaTeX_Size2-Regular.woff2"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_AMS-Regular.eot",
+      "sha256": "0ca50506baa972f479594d95dbd2bf86e2f8a29307d07a6c239cd58ac14a5456",
+      "file": "KaTeX_AMS-Regular.eot"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Math-Italic.woff2",
+      "sha256": "812f4c094e7c8c3bcca4f5da54222b491be4b7c8071f8dc19f2ecc92c7f21e99",
+      "file": "KaTeX_Math-Italic.woff2"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_SansSerif-Regular.eot",
+      "sha256": "01c8db29e2ba618d7fe1cc7b8cb0d4cfeeeb5769baea4157df8a52beefbb30e9",
+      "file": "KaTeX_SansSerif-Regular.eot"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Size1-Regular.eot#iefix",
+      "sha256": "390ed74fb0824d9fdd54ec815e9b4b077d91572d64fc152cd46163a3e76fb46b",
+      "file": "KaTeX_Size1-Regular.eot#iefix"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Math-Italic.woff",
+      "sha256": "40c45e2019e904bbbee2f6e9d9dc90ec669739323fee7276024b5076aa18ca0a",
+      "file": "KaTeX_Math-Italic.woff"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Main-Bold.eot",
+      "sha256": "5eec6e6bdd17903e54dc9ade3152866aa04d2d35aaf783b79f37700a98dd2b6c",
+      "file": "KaTeX_Main-Bold.eot"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Typewriter-Regular.ttf",
+      "sha256": "025d23e861f61a65304f7d86cad4cf66e4c6aeda363b868e36a93e873992cd8f",
+      "file": "KaTeX_Typewriter-Regular.ttf"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Main-Regular.eot",
+      "sha256": "67034028daa9821527985b157231043feee55ed7872ea165ec0892dfc2ceff02",
+      "file": "KaTeX_Main-Regular.eot"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Fraktur-Bold.eot#iefix",
+      "sha256": "0509488a4d0dc07c86b21382a5a4f7b441c5d07300ef7c29ada73ec278239d56",
+      "file": "KaTeX_Fraktur-Bold.eot#iefix"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Fraktur-Bold.eot",
+      "sha256": "0509488a4d0dc07c86b21382a5a4f7b441c5d07300ef7c29ada73ec278239d56",
+      "file": "KaTeX_Fraktur-Bold.eot"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Main-Bold.woff2",
+      "sha256": "f14fb86c521fdcb0ce9ded435dd5e01f265372a049b085059c5aeb509413b26e",
+      "file": "KaTeX_Main-Bold.woff2"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Main-Bold.eot#iefix",
+      "sha256": "5eec6e6bdd17903e54dc9ade3152866aa04d2d35aaf783b79f37700a98dd2b6c",
+      "file": "KaTeX_Main-Bold.eot#iefix"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Main-Italic.ttf",
+      "sha256": "1bac98fcd5975d20260ed3828e213c318654ca2a7568ff2ea9c3bf5384c1a1d9",
+      "file": "KaTeX_Main-Italic.ttf"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_AMS-Regular.ttf",
+      "sha256": "b2d9fa87a78c46d3277052b9eeb204272e6e5dc098f4b6f083036f58da25dfd6",
+      "file": "KaTeX_AMS-Regular.ttf"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Size1-Regular.eot",
+      "sha256": "390ed74fb0824d9fdd54ec815e9b4b077d91572d64fc152cd46163a3e76fb46b",
+      "file": "KaTeX_Size1-Regular.eot"
+    },
+    {
+      "url": "https://distill.pub/third-party/katex/fonts/KaTeX_Size2-Regular.eot",
+      "sha256": "2cdc93658e12734e66adff00b0e82d5105ba5a70d9b2f50fa50b76aee6267b44",
+      "file": "KaTeX_Size2-Regular.eot"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "reference": "https://distill.pub/2021/gnn-intro/",
+  "framework": "https://distill.pub/template.v2.js",
+  "reference_uses": "template.v2.js, d-front-matter, d-title, d-byline, d-article; bespoke GNN diagrams and article-specific CSS",
+  "implementation": "Same official shared framework, own original research and scientific figures. GNN-specific components and branding not copied.",
+  "source_commit_reviewed": "bf862cc4fe8abd56a94759453801fd04529fad9b",
+  "starter_reviewed": "https://github.com/distillpub/post--example/blob/master/src/index.ejs",
+  "verification_limit": "No permitted browser QA tool available; visual match not verified."
+}

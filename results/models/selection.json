@@ -1,0 +1,14 @@
+{
+  "Ridge": {
+    "alpha": 1.0,
+    "validation_mae": 36.32558180072509
+  },
+  "Residual": {
+    "alpha": 0.1,
+    "validation_mae": 36.33324773756986
+  },
+  "Ablation": {
+    "alpha": 0.1,
+    "validation_mae": 38.653736046288785
+  }
+}

@@ -1,0 +1,10 @@
+numpy==2.3.5
+scipy==1.17.0
+astropy==8.0.2
+photutils==3.1.0
+scikit-learn==1.8.0
+torch==2.14.1
+matplotlib==3.10.8
+pandas==2.2.3
+pytest==9.1.1
+joblib==1.5.3

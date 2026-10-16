@@ -1,0 +1,2 @@
+PASS: article local assets, anchors, native Distill tags, vendored framework patch, math font paths, Vercel JSON
+NOT RUN: browser rendering, console, responsive screenshots, interactive event QA, Vercel-host deployment
