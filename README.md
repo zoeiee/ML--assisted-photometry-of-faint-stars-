@@ -33,13 +33,6 @@ One of the more interesting findings was that a relatively simple mathematical m
 
 This doesn't mean machine learning is unsuitable for astronomical photometry. It suggests that conventional methods can be difficult to outperform when their assumptions closely match the data.
 
-## What I Learned
-
-- How astronomical images represent stellar flux and how noise affects photometric measurements.
-- How aperture photometry and PSF fitting estimate brightness using different assumptions.
-- How to build and evaluate regression models for scientific measurements.
-- Why comparing machine-learning models against established numerical methods is important.
-- How to interpret prediction errors, systematic bias, and negative experimental results.
 
 ## Limitations
 
